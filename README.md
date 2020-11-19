@@ -1,5 +1,5 @@
 ---
-title: "灰度持仓数据分析"
+title: "灰度比特币持仓分析"
 date: 2020-11-19T19:39:00+08:00
 draft: false
 ---
@@ -102,7 +102,7 @@ AUM（Net Assets Under Management）可能并不是比特币持仓价值。
 
 AICoin计算的是`流通股*每股比特币量`[^1]，所得结果与AUM除以当日比特币收盘价不同。不懂为什么，但用“流通”股应该是错的。
 
-![2020-11-19-AUM[20180306-20201118]](/img/2020-11-19-AUM[20180306-20201118].png)
+![2020-11-19-AUM[20180306-20201118]](img/2020-11-19-AUM[20180306-20201118].png)
 
 ### 用AUM计算比特币数量
 
@@ -132,14 +132,14 @@ with open('aum.csv', 'w') as f:
         print(f"{line}\t{price}")
 ```
 
-![2020-11-19-按AUM计算得到的比特币数量](/img/2020-11-19-按AUM计算得到的比特币数量.png)
+![2020-11-19-按AUM计算得到的比特币数量](img/2020-11-19-按AUM计算得到的比特币数量.png)
 
 **图中红线部分持仓明显下降，灰度并非不会砸。**
 
 ---
 
-[Grayscale Bitcoin Trust Fact Sheet](https://grayscale.co/wp-content/uploads/2020/11/BTC-Trust-Fact-Sheet-November-2020.pdf) 中关于赎回规则的描述 ↓ 
+[Grayscale Bitcoin Trust Fact Sheet](https://grayscale.co/wp-content/uploads/2020/11/BTC-Trust-Fact-Sheet-November-2020.pdf) 中关于赎回规则的描述 ↓
 
-![赎回规则](/img/2020-11-19-赎回规则.png)
+![赎回规则](img/2020-11-19-赎回规则.png)
 
 [^1]: 用官网[这里](https://grayscale.co/bitcoin-investment-trust/#overview)的“Shares Outstanding”乘“Bitcoin per Share”。
